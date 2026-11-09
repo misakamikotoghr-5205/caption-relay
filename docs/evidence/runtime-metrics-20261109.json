@@ -1,0 +1,48 @@
+{
+  "observedAt": "2026-11-09",
+  "source": "Sanitized metrics selected from the task-owned local Ollama log; no prompt, credential, identity or file path copied.",
+  "historical_probes": [
+    "local-model-20261109.json",
+    "local-model-20261109-2.json",
+    "local-model-20261109-3.json"
+  ],
+  "initial_configured_request_timer_ms": 45000,
+  "observed_elapsed_ms": [
+    259421,
+    46265,
+    45876
+  ],
+  "strict_wall_clock_guarantee": false,
+  "runner": {
+    "threads": 2,
+    "parallel": 1,
+    "contexts_seen": [
+      4096,
+      2048
+    ]
+  },
+  "warmup": {
+    "context": 2048,
+    "runner_startup_seconds": 20.28,
+    "http_status": 200,
+    "empty_response": true,
+    "immediate_ps_query_performed": false
+  },
+  "last_initial_probe": {
+    "new_runner_started": false,
+    "prompt_eval_tokens": 259,
+    "prompt_eval_ms": 35206.6,
+    "prompt_tokens_per_second": 7.36,
+    "generated_tokens": 22,
+    "generation_ms": 10503.42,
+    "generated_tokens_per_second": 2,
+    "http_status_after_cancellation": 500,
+    "agent_outcome": "rules-only"
+  },
+  "limits": [
+    "The first timer fired much later than nominal under the observed machine conditions; the cause was not proven.",
+    "The final initial probe exhausted its nominal deadline during generation, not a fresh model load.",
+    "No model review success is established by the empty warmup.",
+    "Later owner-led revised-timeout probes are separate evidence."
+  ]
+}

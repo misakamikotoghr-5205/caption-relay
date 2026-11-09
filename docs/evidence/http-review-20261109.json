@@ -1,0 +1,76 @@
+{
+  "recorded_at": "2026-11-09T07:44:57.319902+00:00",
+  "method": "Actual HTTP POST to the locally running Vinext app /api/review, using production route and live loopback Ollama. No mock.",
+  "http_status": 200,
+  "curl_elapsed_seconds": 59.729753,
+  "request": {
+    "cues": [
+      {
+        "id": "cue-1",
+        "index": 1,
+        "startMs": 0,
+        "endMs": 3000,
+        "text": "Welcome to caption relay."
+      },
+      {
+        "id": "cue-2",
+        "index": 2,
+        "startMs": 3200,
+        "endMs": 6200,
+        "text": "caption relay keeps the original timing."
+      }
+    ],
+    "glossary": {
+      "caption relay": "Caption Relay"
+    }
+  },
+  "response": {
+    "mode": "ai",
+    "model": "qwen2.5:0.5b",
+    "proposals": [
+      {
+        "cueId": "cue-2",
+        "text": "Caption Relay keeps the original timing.",
+        "reason": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+      }
+    ],
+    "decisions": [
+      {
+        "candidateId": "candidate:cue-2:1",
+        "cueId": "cue-2",
+        "decision": "suggest",
+        "reason": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+      }
+    ],
+    "toolTrace": [
+      {
+        "tool": "audit_cues",
+        "result": "2 heuristic flags across 2 cues. No audio alignment or transcription correctness was verified."
+      },
+      {
+        "tool": "get_cue",
+        "result": "Inspected cue-1: 0–3000ms; 25 characters; 1 optional program-generated glossary candidates (not model-authored text). Tool data was treated as untrusted."
+      },
+      {
+        "tool": "get_cue",
+        "result": "Inspected cue-2: 3200–6200ms; 40 characters; 1 optional program-generated glossary candidates (not model-authored text). Tool data was treated as untrusted."
+      },
+      {
+        "tool": "validate_recommendations",
+        "result": "1 model selections validated; 1 literal glossary candidates suggested. Text is program-generated, not model-authored. Timing and source cues remain unchanged; human approval is required."
+      }
+    ],
+    "text_source": "program-generated-literal-glossary-candidates",
+    "decision_source": "local-model-selection"
+  },
+  "browser_round_trip_verified": false,
+  "limitations": [
+    "Original fictional subtitle input.",
+    "Initial browser import was verified; browser connection later failed, so this is an HTTP integration check, not UI acceptance/export footage.",
+    "Only the returned recommendation is asserted; model inspection does not imply full-document approval."
+  ],
+  "file_sha256": {
+    "request.json": "9ccaf72dd315201bb62b1a40cff2bd2548aac42fd9a06e73a3674333afb65992",
+    "response.json": "d31eb1c77e9106695c5313da99418994c6ab769d1fe8cfe22516b7c438f530da"
+  }
+}

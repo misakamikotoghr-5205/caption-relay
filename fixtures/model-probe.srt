@@ -1,0 +1,7 @@
+1
+00:00:00,000 --> 00:00:03,000
+Welcome to caption relay.
+
+2
+00:00:03,200 --> 00:00:06,200
+caption relay keeps the original timing.

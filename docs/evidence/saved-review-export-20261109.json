@@ -1,0 +1,151 @@
+{
+  "recorded_at": "2026-11-09T07:51:24.231419+00:00",
+  "method": "Actual export-reviewed CLI execution using saved real local HTTP response; explicit --accept cue-2. No model invocation by this step.",
+  "fresh_model_invocations": 0,
+  "accepted": [
+    "cue-2"
+  ],
+  "retained": [
+    "cue-1"
+  ],
+  "timing_changed": false,
+  "artifacts": {
+    "reviewed.srt": {
+      "sha256": "05bfbdd51661cb072228c3a9418c2e7232b7cbd018feba5cca0492325e949ffd",
+      "bytes": 132
+    },
+    "reviewed.vtt": {
+      "sha256": "af2df59cbbd426d053e1f815bf8c28df01238902e2963ee22c29d49845fcf2dd",
+      "bytes": 136
+    },
+    "audit.json": {
+      "sha256": "24988754d67475744c272b486826eb9915ea8cbd5fb91c0c39fdd8e1e810aabc",
+      "bytes": 3947
+    }
+  },
+  "audit": {
+    "schemaVersion": 1,
+    "scope": "Offline human-review replay of saved files; no fresh model invocation. Saved files and hashes do not prove model-call authenticity.",
+    "original": [
+      {
+        "id": "cue-1",
+        "index": 1,
+        "startMs": 0,
+        "endMs": 3000,
+        "text": "Welcome to caption relay."
+      },
+      {
+        "id": "cue-2",
+        "index": 2,
+        "startMs": 3200,
+        "endMs": 6200,
+        "text": "caption relay keeps the original timing."
+      }
+    ],
+    "current": [
+      {
+        "id": "cue-1",
+        "index": 1,
+        "startMs": 0,
+        "endMs": 3000,
+        "text": "Welcome to caption relay."
+      },
+      {
+        "id": "cue-2",
+        "index": 2,
+        "startMs": 3200,
+        "endMs": 6200,
+        "text": "Caption Relay keeps the original timing."
+      }
+    ],
+    "glossary": {
+      "caption relay": "Caption Relay"
+    },
+    "rules": {
+      "original": [
+        {
+          "cueId": "cue-1",
+          "kind": "terminology",
+          "severity": "info",
+          "message": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+        },
+        {
+          "cueId": "cue-2",
+          "kind": "terminology",
+          "severity": "info",
+          "message": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+        }
+      ],
+      "current": [
+        {
+          "cueId": "cue-1",
+          "kind": "terminology",
+          "severity": "info",
+          "message": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+        }
+      ]
+    },
+    "agent": {
+      "mode": "ai",
+      "model": "qwen2.5:0.5b",
+      "proposals": [
+        {
+          "cueId": "cue-2",
+          "text": "Caption Relay keeps the original timing.",
+          "reason": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+        }
+      ],
+      "decisions": [
+        {
+          "candidateId": "candidate:cue-2:1",
+          "cueId": "cue-2",
+          "decision": "suggest",
+          "reason": "The user glossary suggests “Caption Relay” for “caption relay”. Confirm that the term is intended here."
+        }
+      ],
+      "toolTrace": [
+        {
+          "tool": "audit_cues",
+          "result": "2 heuristic flags across 2 cues. No audio alignment or transcription correctness was verified."
+        },
+        {
+          "tool": "get_cue",
+          "result": "Inspected cue-1: 0–3000ms; 25 characters; 1 optional program-generated glossary candidates (not model-authored text). Tool data was treated as untrusted."
+        },
+        {
+          "tool": "get_cue",
+          "result": "Inspected cue-2: 3200–6200ms; 40 characters; 1 optional program-generated glossary candidates (not model-authored text). Tool data was treated as untrusted."
+        },
+        {
+          "tool": "validate_recommendations",
+          "result": "1 model selections validated; 1 literal glossary candidates suggested. Text is program-generated, not model-authored. Timing and source cues remain unchanged; human approval is required."
+        }
+      ],
+      "text_source": "program-generated-literal-glossary-candidates",
+      "decision_source": "local-model-selection"
+    },
+    "human": {
+      "accepted": [
+        "cue-2"
+      ],
+      "retained": [
+        "cue-1"
+      ],
+      "proposalDecisions": [
+        {
+          "cueId": "cue-2",
+          "decision": "accept"
+        }
+      ],
+      "source": "Explicit --accept cue IDs only; absent IDs retain the original. Retained cues may include unreviewed cues."
+    },
+    "timingChanged": false,
+    "savedInputs": {
+      "requestSha256": "9ccaf72dd315201bb62b1a40cff2bd2548aac42fd9a06e73a3674333afb65992",
+      "responseSha256": "d31eb1c77e9106695c5313da99418994c6ab769d1fe8cfe22516b7c438f530da",
+      "meaning": "Hashes identify these local saved files only; they are not signatures or proof of model-call authenticity."
+    },
+    "exportedAt": "2026-11-09T07:45:54.663Z"
+  },
+  "browser_acceptance_export_verified": false
+}

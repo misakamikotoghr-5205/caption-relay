@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-11-09T07:21:54.313428+00:00",
+  "purpose": "One bounded empty-prompt local model warmup; not an agent or production review result.",
+  "timeoutSeconds": 180,
+  "paidApi": false,
+  "model": "qwen2.5:0.5b",
+  "httpStatus": 200,
+  "done": true,
+  "responseCharacters": 0,
+  "loadDurationNanoseconds": null,
+  "elapsedSeconds": 22.461,
+  "requestOptions": {
+    "num_thread": 2,
+    "num_ctx": 2048
+  },
+  "loaded_models_immediately_after_warmup": "not queried"
+}

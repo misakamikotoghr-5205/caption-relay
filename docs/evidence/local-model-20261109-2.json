@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-11-09T07:18:37.353Z",
+  "startedAt": "2026-11-09T07:17:51.036Z",
+  "elapsedMs": 46265,
+  "source": "Actual production reviewCaptions and direct loopback ollamaChat; logging wrapper only, no mock.",
+  "fixture": "fixtures/model-probe.srt",
+  "fictionalInput": true,
+  "glossary": {
+    "caption relay": "Caption Relay"
+  },
+  "ollamaVersion": "0.40.15",
+  "model": "qwen2.5:0.5b",
+  "modelMetadata": {
+    "name": "qwen2.5:0.5b",
+    "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+    "size": 397821319,
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "494.03M",
+      "quantization_level": "Q4_K_M",
+      "context_length": 32768,
+      "embedding_length": 896,
+      "runner": "ggml"
+    }
+  },
+  "calls": [
+    {
+      "turn": 1,
+      "model": "qwen2.5:0.5b",
+      "timeoutMs": 45000,
+      "elapsedMs": 45783,
+      "error": "The local model request timed out."
+    }
+  ],
+  "result": {
+    "mode": "rules-only",
+    "model": "qwen2.5:0.5b",
+    "proposals": [],
+    "toolTrace": [
+      {
+        "tool": "audit_cues",
+        "result": "2 heuristic flags across 2 cues. No audio alignment or transcription correctness was verified."
+      }
+    ],
+    "error": "The local model request timed out."
+  },
+  "inputUnchanged": true,
+  "immutableTiming": [
+    {
+      "id": "cue-1",
+      "startMs": 0,
+      "endMs": 3000
+    },
+    {
+      "id": "cue-2",
+      "startMs": 3200,
+      "endMs": 6200
+    }
+  ],
+  "sourceHashes": {
+    "lib/agent.ts": "cbaa83cff6ac44ceb2224015289390909a81a6f894c1d53ea55d5c7a68ecb192",
+    "lib/captions.ts": "d0461277dcdb595a88dec558bd5ea141957025e39789f96a4667e78bad36a59a"
+  },
+  "limitations": [
+    "This is a small fictional local probe, not a quality benchmark or a hosted-worker model verification.",
+    "Rules are heuristics; neither audio alignment nor transcription accuracy was checked.",
+    "All text suggestions need human review. Prompt-injection protections constrain capabilities, not semantic correctness.",
+    "A rules-only result is retained as a real failure, never replaced with invented AI suggestions."
+  ]
+}
