@@ -6,11 +6,17 @@ A local-first subtitle handoff prototype for the MINMAX AI Agent hackathon. Impo
 
 Requires Node.js 22.13+ (tested with 24.22.0), npm, and a local Ollama installation. No accounts, API keys, payment cards or cloud inference are required. The subtitle UI and rule checks work without Ollama; the app then clearly reports `rules-only` and returns **no fabricated AI proposals**.
 
+In terminal 1, start the local model server (skip this if it is already running):
+
 ```sh
-npm ci
-ollama pull qwen2.5:0.5b
 ollama serve
-# In a second terminal:
+```
+
+In terminal 2, from this repository:
+
+```sh
+ollama pull qwen2.5:0.5b
+npm ci
 npm run dev -- --hostname 127.0.0.1 --port 5190
 ```
 

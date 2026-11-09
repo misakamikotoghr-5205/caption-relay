@@ -1,0 +1,89 @@
+{
+  "recorded_at_utc": "2026-11-09T08:03:23.115725+00:00",
+  "project": "Caption Relay",
+  "video_filename": "caption-relay-minmax-demo.mp4",
+  "video_sha256": "79e119fb450de9ef5d7bc54371b19a2366eec3974b8fa918ad20ce1c3183de1f",
+  "video_bytes": 2124112,
+  "duration_seconds": 106.8,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "width": 1920,
+  "height": 1080,
+  "frames_per_second": 5,
+  "audio_duration_seconds": 106.644,
+  "voice": {
+    "name": "zh-CN-XiaoxiaoNeural",
+    "kind": "Stock zh-CN female synthetic voice; no cloning or impersonation",
+    "production_tool": "edge-tts 7.3.1",
+    "service": "Microsoft Edge online TTS; only public project narration was sent; no paid API or account used"
+  },
+  "subtitles": {
+    "filename": "caption-relay-final.zh-CN.srt",
+    "sha256": "6ca2599f186a87e5ade5bc6bd3efea938544db20a1e1d817fc498d934e9f83f6",
+    "cues": 20,
+    "burned_in": true,
+    "timing_source": "Service sentence boundaries plus exact PCM segment offsets; 50ms sentence-tail overlaps trimmed; 300ms editing pauses between ten segments",
+    "text_matches_narration": true
+  },
+  "presentation": {
+    "kind": "Edited original evidence cards from actual saved HTTP/CLI files",
+    "not_gui_or_terminal_capture": true,
+    "model_wait_edited": true,
+    "browser_import_previously_verified": true,
+    "browser_ai_review_acceptance_export_verified": false
+  },
+  "actual_model_run": {
+    "evidence": "evidence/http-review-20261109.json",
+    "http_status": 200,
+    "elapsed_seconds": 59.729753,
+    "model": "qwen2.5:0.5b",
+    "inspected": [
+      "cue-1",
+      "cue-2"
+    ],
+    "suggested": [
+      "cue-2"
+    ],
+    "text_source": "program-generated-literal-glossary-candidates",
+    "decision_source": "local-model-selection"
+  },
+  "actual_saved_review_export": {
+    "evidence": "evidence/saved-review-export-20261109.json",
+    "fresh_model_invocations": 0,
+    "accepted": [
+      "cue-2"
+    ],
+    "retained": [
+      "cue-1"
+    ],
+    "timing_changed": false,
+    "outputs": [
+      "reviewed.srt",
+      "reviewed.vtt",
+      "audit.json"
+    ]
+  },
+  "source_sha256": {
+    "request.json": "9ccaf72dd315201bb62b1a40cff2bd2548aac42fd9a06e73a3674333afb65992",
+    "response.json": "d31eb1c77e9106695c5313da99418994c6ab769d1fe8cfe22516b7c438f530da",
+    "audit.json": "24988754d67475744c272b486826eb9915ea8cbd5fb91c0c39fdd8e1e810aabc",
+    "reviewed.srt": "05bfbdd51661cb072228c3a9418c2e7232b7cbd018feba5cca0492325e949ffd",
+    "reviewed.vtt": "af2df59cbbd426d053e1f815bf8c28df01238902e2963ee22c29d49845fcf2dd",
+    "http-review-20261109.json": "d5a94619178fb1c712c1f6bbc438abdf6ee10f4444fe93fc7e6096fde2c438e3"
+  },
+  "qa": {
+    "ffprobe_passed": true,
+    "full_audio_video_decode_passed": true,
+    "actual_midpoint_frames_reviewed": 10,
+    "no_visual_overflow_observed": true,
+    "subtitle_timing_and_text_checked": true,
+    "manual_full_audio_listening_completed": false
+  },
+  "public_video_url": null,
+  "official_submission": false,
+  "limits": [
+    "Saved file hashes identify local artifacts; they are not proof or signatures of model-call authenticity.",
+    "One returned recommendation is demonstrated, not full-document approval.",
+    "No audio alignment, transcription accuracy, user outcome or complete browser workflow is claimed."
+  ]
+}
