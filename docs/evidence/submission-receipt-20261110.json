@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "contest": "MINMAX AI Agent hackathon",
+  "project": "字幕交接台 Caption Relay",
+  "observed_at_utc": "2026-11-10T09:22:31.745Z",
+  "channel": "Organizer email reply viewed in Outlook UI",
+  "official_organizer_address": "GBABASE@Hotmail.com",
+  "registration_confirmed": true,
+  "project_materials_receipt_confirmed": true,
+  "formal_project_submission": true,
+  "organizer_message_summary": "The organizer confirmed successful receipt of the entry. Collection closes November 10; expert review follows, and advancing finalists will be contacted after results.",
+  "email_displayed_date_time": "2026/11/10 16:22",
+  "email_displayed_timezone": "unverified; not interpreted as UTC",
+  "submitted_source_commit": "e28bb9f0a228fbb74b18852ef788bd268233427f",
+  "sent_attachments": [
+    {
+      "type": "business-plan PDF",
+      "bytes": 109761,
+      "sha256": "bce9bb95e194bbca8ab2968e66866590506d01e794a3c18b28ff806a7eb2e98d"
+    },
+    {
+      "type": "demo MP4",
+      "seconds": 106.8,
+      "bytes": 2124112,
+      "sha256": "79e119fb450de9ef5d7bc54371b19a2366eec3974b8fa918ad20ce1c3183de1f"
+    }
+  ],
+  "review_pass_confirmed": false,
+  "finalist_status_confirmed": false,
+  "award_confirmed": false,
+  "private_contact_details_and_full_email_headers_omitted": true,
+  "limitations": [
+    "Receipt is not finalist or award confirmation.",
+    "The original submitted materials remain unchanged; this update records the later organizer reply.",
+    "The demo is an edited evidence presentation of saved HTTP/CLI results, not a complete GUI recording."
+  ]
+}
