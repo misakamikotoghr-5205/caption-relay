@@ -38,7 +38,7 @@ No test account is needed. Only bind to loopback. Subtitle and glossary content 
 
 Created 2026-11-09 by Hengrui Guo, an individual developer with AI-assisted coding. See [business plan](docs/minmax-business-plan.md), [demo script](docs/demo-narration.md), and [official submission checklist](docs/minmax-submission.md). A repository, draft, or email send is not an official organizer acceptance. The UI has an editable `source=target` glossary; it locks for the current review, and restarting restores original subtitles for a new review.
 
-On 2026-11-10, the project email was sent through Outlook and verified in Sent Items with the PDF and MP4 attached. **Organizer confirmation is pending; the questionnaire registration is not complete.** The sent packet corresponds to source revision `e28bb9f0a228fbb74b18852ef788bd268233427f`; these later documentation updates do not describe new code, model calls or footage. No official registration or final-entry receipt is claimed.
+On 2026-11-10, the project email was sent through Outlook and verified in Sent Items with the PDF and MP4 attached. **The individual questionnaire registration was submitted and verified on the official completion page on November 10. The project email and questionnaire are both sent; organizer confirmation of the project materials is still pending.** The sent packet corresponds to source revision `e28bb9f0a228fbb74b18852ef788bd268233427f`; these later documentation updates do not describe new code, model calls or footage. The completion page confirms registration, not organizer acceptance of the project or a final-entry receipt.
 
 ## Open source and comparisons
 
