@@ -38,6 +38,8 @@ No test account is needed. Only bind to loopback. Subtitle and glossary content 
 
 Created 2026-11-09 by Hengrui Guo, an individual developer with AI-assisted coding. See [business plan](docs/minmax-business-plan.md), [demo script](docs/demo-narration.md), and [official submission checklist](docs/minmax-submission.md). A repository, draft, or email send is not an official organizer acceptance. The UI has an editable `source=target` glossary; it locks for the current review, and restarting restores original subtitles for a new review.
 
+On 2026-11-10, the project email was sent through Outlook and verified in Sent Items with the PDF and MP4 attached. **Organizer confirmation is pending; the questionnaire registration is not complete.** The sent packet corresponds to source revision `e28bb9f0a228fbb74b18852ef788bd268233427f`; these later documentation updates do not describe new code, model calls or footage. No official registration or final-entry receipt is claimed.
+
 ## Open source and comparisons
 
 The app uses the supplied Sites Vinext starter, React/Next.js, Vinext/Vite, Tailwind CSS and Lucide icons; exact installed versions are in `package-lock.json`. Bundled vendor notices are retained. Ollama and Qwen2.5 are external runtime/model dependencies; weights are not distributed here. Read their own licenses before redistribution. [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit) is a much broader subtitle editor. It is referenced as a comparator, with no Subtitle Edit source copied into this app. This project focuses narrowly on timing-constrained, evidence-bearing human handoff and does not claim to invent subtitle editing.
